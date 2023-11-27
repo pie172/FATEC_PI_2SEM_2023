@@ -60,8 +60,8 @@ nav.navbar-transparente {
     border-radius: 5px;
     padding: 20px;
     width: 350px;
-    height: 730px;
-    display: flex;
+    height: 790px;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -88,6 +88,19 @@ nav.navbar-transparente {
     float: center;
 }
 
+.btn-roxo1 {
+    background: #8b5de7;
+    color: #ffffff;
+    float: center;
+    margin-top: 73px;
+}
+.btn-roxo2 {
+    background: #8b5de7;
+    color: #ffffff;
+    float: center;
+    margin-top: 25px;
+}
+
 .btn-roxo:hover {
     background: #7145c9;
     color: #ffffff;
@@ -107,7 +120,15 @@ nav.navbar-transparente {
     padding-bottom: 50px;
     border-top-right-radius: 10%;
     border-top-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
 }
+
+.caixa2 p {
+    font-weight: 400;
+    font-family: "roboto";
+}
+
 .mindfulness__item{
     width:calc((100% - 10vw) / 3);
     margin-bottom:3vw
@@ -144,4 +165,87 @@ nav.navbar-transparente {
     color: #f2f2f2;
     letter-spacing: -0.02em;
 }
+
+/*--------------------------------------------------------------*/
+
+footer {
+    background: #f9fbf8a8;
+    padding: 35px;
+    margin-top: 35px;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .7), 0 2px 8px 0 rgba(0, 0, 0, .5), 0 1px 5px 0 rgba(0, 0, 0, .1);
+}
+
+footer h4 {
+    color: #5424b6;
+    font-size: 20px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer h4:hover {
+    color: #7145c9;
+}
+
+footer .navbar-nav i {
+    text-align: justify;
+}
+
+footer .navbar-nav a {
+    color: #1e1919be;
+    font-weight: 25px;
+    font-size: 14px;
+}
+
+footer .navbar-nav a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li {
+    float: right;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+footer ul li img {
+    float: right;
+}
+
+footer p span {
+    color: #acacac;
+}
+
+.social-media {
+    display: inline-block;
+}
+
+.social-media i {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    margin: 10px 3px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    border-radius: 50%;
+    color: white;
+}
+
+.social-media i:hover {
+    transform: scale(1.2);
+}
+
+hr {
+    margin: 65px 20px;
+}
+
 

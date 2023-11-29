@@ -1,10 +1,11 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $nome = $_POST["nome"];
     $email = $_POST["email"];
     $senha = $_POST["senha"];
 
     // Conexão com o banco de dados
-    $conexao = new mysqli("localhost", "user", "password", "Usuarios");
+    $conexao = new mysqli("localhost", "root", "", "Registros");
 
     if ($conexao->connect_error) {
         die("Conexão falhou: " . $conexao->connect_error);
@@ -23,8 +24,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Insira o novo usuário no banco de dados
         $insert_sql = "INSERT INTO Usuarios (nome, email, senha) VALUES (?, ?, ?)";
         $insert_stmt = $conexao->prepare($insert_sql);
-        $insert_stmt->bind_param("ss", $email, $senha);
-        if ($insert_stmt->execute()) {
+        $insert_stmt->bind_param("sss", $nome, $email, $senha);
+        if ($insert_stmt->execute()) 
             echo "Cadastro bem-sucedido! Você pode fazer login agora.";
         } else {
             echo "Erro no cadastro. Tente novamente.";

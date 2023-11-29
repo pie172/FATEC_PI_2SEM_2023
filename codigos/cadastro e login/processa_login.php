@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $senha = $_POST["senha"];
 
     // Conecte-se ao banco de dados (substitua pelos dados de conexão reais)
-    $conexao = new mysqli("localhost", "seu_usuario", "sua_senha", "Usuarios");
+    $conexao = new mysqli("localhost", "root", "", "Registros");
 
     if ($conexao->connect_error) {
         die("Conexão falhou: " . $conexao->connect_error);

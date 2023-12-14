@@ -1,0 +1,251 @@
+html,
+body,
+#home {
+    height: 100%;
+    overflow-x: hidden; 
+}
+
+body {
+    background: url(../images/fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav.navbar-transparente {
+    background-color: #f9fbf8a8;
+    font-family: "roboto";
+    font-size: 20px;
+    margin-bottom: -50px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #7145c9;
+    margin: 10px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #9068df;
+}
+
+.nav-logo {
+    width: 150px;
+    height: 80px;
+}
+
+.btn-color {
+    background-color: #7145c9;
+    font-family: "roboto";
+}
+
+.btn-color:hover {
+    background-color: #9068df;
+}
+
+/* -----------------------------------------------------------*/
+
+.capa {
+    text-align: center;
+}
+
+.caixa {
+    padding: 50px;
+    margin-top: 150px;
+
+}
+ 
+.card {
+    border: 3px solid #5424b6;
+    border-radius: 5px;
+    padding: 20px;
+    width: 350px;
+    height: 790px;
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}   
+ 
+.card img {
+    width: 50%;
+}
+ 
+.card h3 {
+    padding-top: 20px;
+}
+ 
+.card p {
+    font-weight: 500;
+    font-family: "roboto";
+    text-align: left;
+}
+
+.btn-roxo {
+    background: #8b5de7;
+    color: #ffffff;
+    float: center;
+    margin-top: 45px;
+}
+
+.btn-roxo1 {
+    background: #8b5de7;
+    color: #ffffff;
+    float: center;
+    margin-top: 73px;
+}
+.btn-roxo2 {
+    background: #8b5de7;
+    color: #ffffff;
+    float: center;
+    margin-top: 25px;
+}
+
+.btn-roxo:hover {
+    background: #7145c9;
+    color: #ffffff;
+}
+
+.yellow {
+    background-color: #e6ec88;
+    font-family: "roboto";
+    color:black;
+    font-style: bold;
+}
+
+.blue {
+    background-color: #e6ec88;
+    color:black;
+    font-style: bold;
+}
+.caixa2 {
+    padding: 60px 0;
+}
+
+.caixa2 {
+    padding-bottom: 50px;
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.caixa2 p {
+    font-weight: 400;
+    font-family: "roboto";
+}
+
+.mindfulness__item{
+    width:calc((100% - 10vw) / 3);
+    margin-bottom:3vw
+}
+.mindfulness__item:not(:nth-child(3n)){
+    margin-right:5vw
+}
+.mindfulness__item--image{
+    width:auto;
+    height:20.5vw;
+    display:flex;
+    align-items:center;
+    justify-content:center
+}
+.mindfulness__item--image img{
+    max-width:100%;
+    max-height:100%;
+    width:auto;
+    height:auto
+}
+
+#servicos {
+    background: #7145c9;
+}
+
+#servicos h2{
+    text-align: center;
+}
+
+#servicos p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #f2f2f2;
+    
+}
+
+/*--------------------------------------------------------------*/
+
+footer {
+    background: #f9fbf8a8;
+    padding: 35px;
+    margin-top: 35px;
+    position: relative;
+    font-family:'Roboto', sans-serif; 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .7), 0 2px 8px 0 rgba(0, 0, 0, .5), 0 1px 5px 0 rgba(0, 0, 0, .1);
+}
+
+footer h4 {
+    color: #5524b6c2;
+    font-size: 20px;
+    margin: 0 20px;
+    text-transform: uppercase;
+    font-family:'Roboto', sans-serif;
+}
+
+footer h4:hover {
+    color:  #7545d4c2;
+}
+
+footer .navbar-nav i{
+    text-align: justify;
+}
+
+footer .navbar-nav a{
+    color: #1e1919be;
+    font-weight: 25px;
+    font-size: 14px;
+}
+
+footer .navbar-nav a:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li{
+    float: right;
+    margin: 0 20px;
+    padding-top: 10px;
+}
+
+footer ul li img {
+    float: right;
+}
+
+footer p span {
+    color: #000000; 
+}
+
+.social-media {
+    display: inline-block;     
+}
+
+.social-media i {
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    margin: 10px 3px;
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    background-color: #5524b6c2;
+    border-radius: 50%;
+    color: white;
+}
+
+.social-media i:hover {
+    transform: scale(1.2);
+}

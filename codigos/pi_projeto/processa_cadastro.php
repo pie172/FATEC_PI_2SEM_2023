@@ -35,14 +35,19 @@ class GestorDeUsuarios {
             $this->db->desconectar();
         }
     }
-
+    // alterado essa function
     private function verificarEmailExistente($email) {
-        $checkEmailSql = "SELECT ID FROM usuarios WHERE email = ?";
+        $checkEmailSql = "CALL VerificarEmailUsuario(:email, @email_em_uso)";
         $stmt = $this->db->prepararStatement($checkEmailSql);
-        $stmt->bindParam(1, $email);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
         $stmt->execute();
-
-        if ($stmt->fetch(PDO::FETCH_ASSOC)) {
+    
+        // Obter o resultado da variável de saída
+        $stmt = $this->db->prepararStatement("SELECT @email_em_uso");
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    
+        if ($result && $result['@email_em_uso'] == 1) {
             throw new Exception("Este email já está em uso. Escolha outro.");
         }
     }

@@ -26,14 +26,5 @@ class Database {
     public function prepararStatement($sql) {
         return $this->conexao->prepare($sql);
     }
-    public function executarConsulta($sql) {
-        try {
-            $stmt = $this->conexao->prepare($sql);
-            $stmt->execute();
-            return $stmt->fetchAll(PDO::FETCH_ASSOC);
-        } catch (PDOException $e) {
-            throw new Exception("Erro na execução da consulta: " . $e->getMessage());
-        }
-    }
 }
 ?>
